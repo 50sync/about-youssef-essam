@@ -1,0 +1,49 @@
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0a1126;
+  width: 380px;
+  min-height: 250px;
+  border-radius: 10px;
+  padding: 16px;
+  gap: 10px;
+}
+
+.skill-item {
+  background-color: #1d293d;
+  padding-inline: 16px;
+  padding-block: 4px;
+  border-radius: 100px;
+  color: white;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-container * {
+  margin: 0;
+}
+
+.skill-title {
+  color: white;
+}
+
+.skill-description {
+  color: #91a2ba;
+  font-size: 16px;
+}
+
+.skill-icon {
+  color: #50a2ff;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .skill-container {
+    width: 80%;
+  }
+}

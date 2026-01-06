@@ -1,0 +1,119 @@
+.home-section {
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+
+.home-icon {
+  background: linear-gradient(to bottom right, #0d6efd, #6f42c1 60%);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  clip-path: circle();
+  transition: all 0.2s ease-in-out;
+}
+
+.description {
+  text-align: center;
+  max-width: 800px;
+  font-weight: 300;
+  padding-inline: 8px;
+  font-size: 12px;
+  color: var(--home-description-color);
+}
+
+.buttons-row {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.home-button {
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.get-in-touch-button {
+  background: linear-gradient(to right, #0d6efd, #6f42c1);
+  background-size: 200%;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.get-in-touch-button:hover {
+  background-position: right center;
+  transform: translateY(-5px);
+}
+
+.view-projects-button {
+  background-color: transparent;
+  border: grey 1px solid;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-projects-button:hover {
+  background-color: transparent;
+  border: grey 1px solid;
+  transform: translateY(-5px);
+}
+
+.links {
+  display: inline-flex;
+  gap: 30px;
+  translate: 0 20px;
+}
+
+.links a {
+  font-size: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+  transform: translateY(-5px);
+}
+
+.welcome-name {
+  background: linear-gradient(135deg, #0d6efd, #6f42c1 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.arrow-down {
+  position: absolute;
+
+  color: white;
+  font-size: 40px;
+  bottom: 60px;
+  animation: arrow-float 1s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 510px) {
+  .description {
+    font-size: 10px;
+  }
+
+  .home-icon {
+    width: 100px;
+    height: 100px;
+  }
+}

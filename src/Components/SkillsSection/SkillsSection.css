@@ -1,0 +1,32 @@
+.skills {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.skills-title-description-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.skills-row-skills {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .skills-description {
+    width: 80%;
+  }
+}
