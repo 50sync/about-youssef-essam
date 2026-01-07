@@ -1,16 +1,18 @@
 import Project from "../ProjectContainer/ProjectContainer";
 import "./ProjectsSection.css";
+import xamLogo from "../../assets/projects/logo.png";
+import mwslaLogo from "../../assets/projects/mwsla_app_icon.png";
 
 const projectsList = [
   {
-    img: "../../../public/projects/logo.png",
+    img: xamLogo,
     title: "Test",
     description: "lorem ipsum dolor sit amet",
     technologies: ["Flutter", "React Native", "React"],
     linkToRepo: "https://placehold.co/600x400",
   },
   {
-    img: "../../../public/projects/mwsla_app_icon.png",
+    img: mwslaLogo,
     title: "Test",
     description: "lorem ipsum dolor sit amet",
     technologies: ["Flutter", "React Native", "React"],
