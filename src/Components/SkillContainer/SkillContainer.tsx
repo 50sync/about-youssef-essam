@@ -14,7 +14,7 @@ type SkillProps = {
 export default function SkillContainer({ skill }: SkillProps) {
   return (
     <>
-      <div className="skill-container container-default-style">
+      <div className="skill-container container-style">
         <div className="skill-icon">{skill.icon}</div>
         <h3 className="skill-title">{skill.name}</h3>
         <h3 className="skill-description">{skill.description}</h3>

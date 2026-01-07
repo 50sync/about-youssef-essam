@@ -9,7 +9,6 @@
 .projects-title-description-column {
   display: flex;
   flex-direction: column;
-  color: wheat;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -18,11 +17,4 @@
 
 .projects-row {
   margin-top: 40px;
-}
-
-
-@media (max-width: 1200px) {
-  .projects-row {
-    grid-template-columns: 1fr;
-  }
 }

@@ -44,7 +44,7 @@ const skillsList = [
 export default function SkillsSection() {
   return (
     <>
-      <div className="skills-section section-default-style" id="skills-section">
+      <div className="skills-section section-style" id="skills-section">
         <div className="skills-title-description-column">
           <h2 className="skills-title section-title">Skills & Expertise</h2>
           <h2 className="skills-description section-description">

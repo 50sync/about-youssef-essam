@@ -18,11 +18,12 @@ body {
   color: #91a2ba;
 }
 
-.section-default-style {
+.section-style {
   min-height: 50vh;
+  scroll-margin-top: 25vh;
 }
 
-.container-default-style {
+.container-style {
   outline-style: solid;
   outline-width: 0;
   transition: all 0.2s ease-in-out;
@@ -30,7 +31,7 @@ body {
   outline: rgba(128, 128, 128, 0.177) 1px solid;
 }
 
-.container-default-style:hover {
+.container-style:hover {
   outline: 1px solid rgba(255, 255, 255, 0.39);
   transform: translateY(-5px);
 }
@@ -44,7 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 60vh;
 }
 
 a {

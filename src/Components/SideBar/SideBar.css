@@ -1,0 +1,31 @@
+.side-bar {
+  position: fixed;
+  left: -50%;
+  background-color: grey;
+  width: 50%;
+  height: 100vh;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.side-bar-open {
+  left: 0%;
+}
+
+.close-side-bar-button {
+  padding: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+}
+
+.links-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar-content {
+  padding: 16px;
+}

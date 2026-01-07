@@ -1,12 +1,18 @@
 import { IoIosArrowDown } from "react-icons/io";
-import { BsDiscord, BsGithub, BsLinkedin } from "react-icons/bs";
 import "./Home.css";
+import { RiDiscordLine, RiGithubLine } from "react-icons/ri";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 export default function Home() {
   return (
     <>
+      <div className="glow blue"></div>
+      <div className="glow pink"></div>
       <div className="home-section" id="home-section">
-        <div className="home-icon">{"</>"}</div>
+        <div className="home-icon-wrapper">
+          <div className="home-icon-pulse" />
+          <div className="home-icon">{"</>"}</div>
+        </div>
         <div className="welcome-text">
           Hi, i'm <span className="welcome-name">Youssef Essam</span>
         </div>
@@ -23,25 +29,28 @@ export default function Home() {
           <button className="home-button get-in-touch-button">
             Get in touch
           </button>
-          <button className="home-button view-projects-button">
+          <a
+            className="home-button view-projects-button"
+            href="#projects-section"
+          >
             View Projects
-          </button>
+          </a>
         </div>
         <div className="links">
           <a href="https://github.com/50sync" target="_blank">
-            <BsGithub />
+            <RiGithubLine />
           </a>
           <a
             href="https://www.linkedin.com/in/youssef-essam-flutter/"
             target="_blank"
           >
-            <BsLinkedin />
+            <AiOutlineLinkedin />
           </a>
           <a
             href="https://discord.com/users/716052671408373841"
             target="_blank"
           >
-            <BsDiscord />
+            <RiDiscordLine />
           </a>
         </div>
         <a href="#skills-section" className="arrow-down">

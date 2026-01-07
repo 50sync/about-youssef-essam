@@ -1,18 +1,27 @@
+import { CiMenuBurger } from "react-icons/ci";
 import "./NavBar.css";
+import { NAV_LINKS } from "../../Router/navigation_links";
 
-export default function NavBar() {
+type NavBarProps = {
+  onToggleSidebar: () => void;
+};
+
+export default function NavBar({ onToggleSidebar }: NavBarProps) {
   return (
     <>
       <nav>
         <div className="logo">
-          <p>{"<Dev/>"}</p>
+          <p>{"Youssef Essam"}</p>
         </div>
-        <div className="nav-links">
-          <a href="#home-section">HOME</a>
-          <a href="#skills-section">SKILLS</a>
-          <a>PROJECTS</a>
-          <a>EXPERIENCE</a>
-          <a>CONTACT</a>
+        <div className="nav-items">
+          <div className="nav-links">
+            {NAV_LINKS.map((link) => (
+              <a href={link.href}>{link.label}</a>
+            ))}
+          </div>
+          <a className="toggle-sidebar-button" onClick={onToggleSidebar}>
+            <CiMenuBurger />
+          </a>
         </div>
       </nav>
     </>

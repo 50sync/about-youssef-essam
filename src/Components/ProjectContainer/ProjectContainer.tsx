@@ -15,9 +15,10 @@ type projectProps = {
 export default function Project({ project }: projectProps) {
   return (
     <>
-      <div className="project-container container-default-style">
+      <div className="project-container container-style">
         <div className="project-img-wrapper">
           <img className="project-img" src={project.img} alt="" />
+          <img className="project-icon" src={project.img} alt="" />
         </div>
         <div className="project-details">
           <div className="project-title">{project.title}</div>
