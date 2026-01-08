@@ -1,0 +1,31 @@
+.contact-info-row {
+  display: flex;
+  gap: 16px;
+}
+
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #50a2ff;
+  border: 1px #9095895f solid;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.contact-info-title {
+  color: white;
+  font-size: 14px;
+}
+
+.contact-info-description {
+  color: #909589;
+  font-size: 14px;
+}

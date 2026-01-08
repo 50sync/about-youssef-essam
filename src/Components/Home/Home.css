@@ -7,6 +7,7 @@
   flex-direction: column;
   min-height: 100vh;
   gap: 20px;
+  position: relative;
 }
 
 h1 {
@@ -17,15 +18,9 @@ h2 {
 }
 
 .home-icon {
-  background: linear-gradient(to bottom right, #0d6efd, #6f42c1 60%);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 36px;
   clip-path: circle();
-  position: absolute;
   transition: all 0.2s ease-in-out;
+  object-fit: cover;
 }
 
 .description {
@@ -137,10 +132,9 @@ h2 {
 .home-icon-pulse {
   position: absolute;
   border-radius: 100%;
-  height: 130px;
-  width: 130px;
-  background: linear-gradient(135deg, #0d6dfd72, #6e42c170 60%);
-  animation: pulsing 2s ease-in-out infinite alternate;
+  height: 140px;
+  width: 140px;
+  box-shadow: 0 0 10px 10px rgba(128, 0, 128, 0.5);
 }
 
 .home-icon-wrapper {
@@ -151,20 +145,16 @@ h2 {
   width: 140px;
 }
 
-.home-icon {
-  height: 140px;
-  width: 140px;
-  animation: homeIconRotating 3s ease-in-out infinite alternate;
+.glow-wrapper {
+  position: absolute;
+  inset: 0;
+  animation: glowRotating 100s linear infinite;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 510px) {
   .description {
     font-size: 10px;
-  }
-
-  .home-icon {
-    width: 100px;
-    height: 100px;
   }
 }
 
@@ -185,5 +175,14 @@ h2 {
 
   100% {
     transform: rotate(-20deg);
+  }
+}
+
+@keyframes glowRotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

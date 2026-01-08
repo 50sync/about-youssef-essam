@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+}
 
 html,
 body {
@@ -6,6 +11,7 @@ body {
   padding: 0;
   background: linear-gradient(to right, #020719, #10192e);
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .section-title {
@@ -45,7 +51,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 100px;
-  padding-bottom: 60vh;
 }
 
 a {
@@ -60,11 +65,5 @@ a {
 
   to {
     transform: translateY(10px);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .skill-container {
-    width: 80%;
   }
 }

@@ -1,12 +1,12 @@
-.projects-row {
+.experience-section {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 }
 
-.projects-title-description-column {
+.experience-title-description-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +14,6 @@
   text-align: center;
   gap: 10px;
 }
-
-.projects-row {
+.experiences {
   margin-top: 40px;
 }
-

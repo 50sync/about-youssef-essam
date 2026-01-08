@@ -1,0 +1,110 @@
+.time-line-row {
+  display: flex;
+  gap: 30px;
+  /* align-items: flex-start; */
+  margin-inline: 30px;
+}
+
+.time-line-start {
+  border: 2px solid #1d293d;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #50a2ff;
+  font-size: 30px;
+}
+
+.time-line-line {
+  width: 2px;
+  position: absolute;
+  top: 60px;
+  left: 48%;
+  bottom: 0;
+  background-color: #1d293d;
+}
+
+.time-line-start-icon {
+  transition: all 0.2s ease;
+}
+
+.time-line-start-icon:hover {
+  transform: scale(1.1);
+}
+
+.time-line-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #1d293d;
+  width: 60vw;
+  min-height: 400px;
+  border-radius: 10px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #0d152a;
+  transition: all 0.2s ease-in-out;
+}
+
+.experience-container:hover {
+  transform: translateX(10px);
+}
+
+.experience-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+  height: 100%;
+}
+
+.job-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.company-name {
+  color: #4a99f0;
+  font-weight: 500;
+}
+
+.job-description {
+  color: #91a2ba;
+  line-height: 1.4;
+}
+
+.job-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.job-skill {
+  background-color: #1d293d;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #7d8ea4;
+  font-size: 0.9rem;
+}
+
+.achivements {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.achievement-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+}

@@ -1,6 +1,7 @@
 import { CiMenuBurger } from "react-icons/ci";
 import "./NavBar.css";
 import { NAV_LINKS } from "../../Router/navigation_links";
+import TypingAnimatedText from "../../utils/typingAnimatedText";
 
 type NavBarProps = {
   onToggleSidebar: () => void;
@@ -11,7 +12,9 @@ export default function NavBar({ onToggleSidebar }: NavBarProps) {
     <>
       <nav>
         <div className="logo">
-          <p>{"Youssef Essam"}</p>
+          <div className="typing-text">
+            <TypingAnimatedText />
+          </div>
         </div>
         <div className="nav-items">
           <div className="nav-links">

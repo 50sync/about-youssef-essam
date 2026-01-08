@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #0a1126;
   width: 380px;
   min-height: 250px;
   border-radius: 10px;
   padding: 16px;
   gap: 10px;
+  backdrop-filter: blur(40px);
 }
 
 .skill-item {

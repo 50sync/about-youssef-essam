@@ -2,16 +2,21 @@ import { IoIosArrowDown } from "react-icons/io";
 import "./Home.css";
 import { RiDiscordLine, RiGithubLine } from "react-icons/ri";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import myImg from "../../assets/me.png";
 
 export default function Home() {
   return (
     <>
-      <div className="glow blue"></div>
-      <div className="glow pink"></div>
       <div className="home-section" id="home-section">
+      <div className="glow-wrapper">
+        <div className="glow blue"></div>
+        <div className="glow pink"></div>
+      </div>
         <div className="home-icon-wrapper">
           <div className="home-icon-pulse" />
-          <div className="home-icon">{"</>"}</div>
+          <div className="home-icon">
+            <img src={myImg} />
+          </div>
         </div>
         <div className="welcome-text">
           Hi, i'm <span className="welcome-name">Youssef Essam</span>

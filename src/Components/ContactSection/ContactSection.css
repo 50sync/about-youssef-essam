@@ -1,0 +1,24 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-informations {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: start;
+  gap: 8px;
+  margin: 16px;
+  margin-top: 40px;
+}
+
+.contact-section-title-description-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
