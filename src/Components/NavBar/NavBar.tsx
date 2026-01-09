@@ -18,8 +18,10 @@ export default function NavBar({ onToggleSidebar }: NavBarProps) {
         </div>
         <div className="nav-items">
           <div className="nav-links">
-            {NAV_LINKS.map((link) => (
-              <a href={link.href}>{link.label}</a>
+            {NAV_LINKS.map((link, index) => (
+              <a key={index} href={link.href}>
+                {link.label}
+              </a>
             ))}
           </div>
           <a className="toggle-sidebar-button" onClick={onToggleSidebar}>

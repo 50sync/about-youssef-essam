@@ -14,8 +14,8 @@ export default function SideBar({ isOpen, onClose }: sideBarProps) {
           X
         </div>
         <div className="links-column">
-          {NAV_LINKS.map((link) => (
-            <a href={link.href} onClick={onClose}>
+          {NAV_LINKS.map((link,index) => (
+            <a key={index} href={link.href} onClick={onClose}>
               {link.label}
             </a>
           ))}

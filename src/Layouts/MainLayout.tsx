@@ -19,6 +19,10 @@ export default function MainLayout() {
         onClose={() => setIsSidebarOpen(!isSidebarOpen)}
       />
       <div className="main-layout">
+        <div className="glow-wrapper">
+          <div className="glow blue"></div>
+          <div className="glow pink"></div>
+        </div>
         <AnimatedSection>
           <Home />
         </AnimatedSection>

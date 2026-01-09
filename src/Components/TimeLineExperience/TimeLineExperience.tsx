@@ -1,6 +1,7 @@
 import { BiMedal } from "react-icons/bi";
 import "./TimeLineExperience.css";
 import { MdWorkOutline } from "react-icons/md";
+import Tag from "../Tag/Tag";
 
 type TimeLineExperienceModel = {
   jobTitle: string;
@@ -33,15 +34,15 @@ export default function TimeLineExperience({
           <div className="company-name">{experience.companyName}</div>
           <div className="job-description">{experience.jobDescription}</div>
           <div className="job-skills">
-            {experience.jobSkills.map((skill) => (
-              <div className="job-skill">{skill}</div>
+            {experience.jobSkills.map((skill, index) => (
+              <Tag key={index} label={skill} />
             ))}
           </div>
           <div className="achivements">
-            {experience.achivements.map((achivement) => (
-              <div className="achievement-row">
-                <BiMedal color="#50a2ff" />
-                <div className="achievement">{achivement}</div>
+            {experience.achivements.map((achivement, index) => (
+              <div key={index} className="achievement-row">
+                <BiMedal color="#50a2ff" className="medal-icon" />
+                <div className="achivement">{achivement}</div>
               </div>
             ))}
           </div>

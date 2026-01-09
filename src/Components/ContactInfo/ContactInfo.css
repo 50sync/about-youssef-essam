@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #50a2ff;
-  border: 1px #9095895f solid;
+  color: var(--icons-color);
+  border: 1px var(--lite-border-color) solid;
   height: 40px;
   width: 40px;
   border-radius: 10px;

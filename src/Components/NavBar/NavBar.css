@@ -1,5 +1,6 @@
 nav {
   position: fixed;
+  top: 0;
   inset-inline: 0;
   display: flex;
   justify-content: space-evenly;
@@ -7,17 +8,17 @@ nav {
   background-color: #030719c5;
   border-bottom: #1d293d 1px solid;
   padding-bottom: 0;
-  z-index: 1;
+  z-index: 9999;
   backdrop-filter: blur(5px);
-  padding: 8px;
+  height: 6vh;
+  max-width: 100vw;
 }
 
 nav .logo {
   width: 150px;
-  
 }
 
-nav .logo .typing-text {  
+nav .logo .typing-text {
   font-size: 20px;
   font-weight: 700;
   color: white;

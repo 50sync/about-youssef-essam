@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import "./SkillContainer.css";
+import Tag from "../Tag/Tag";
 type SkillModel = {
   icon: ReactNode;
   name: string;
@@ -19,8 +20,8 @@ export default function SkillContainer({ skill }: SkillProps) {
         <h3 className="skill-title">{skill.name}</h3>
         <h3 className="skill-description">{skill.description}</h3>
         <div className="skills-row">
-          {skill.skills.map((skill) => (
-            <div className="skill-item">{skill}</div>
+          {skill.skills.map((skill,index) => (
+            <Tag key={index} label={skill} />
           ))}
         </div>
       </div>

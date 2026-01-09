@@ -60,7 +60,6 @@
 .experience-content-wrapper {
   display: flex;
   flex-direction: column;
-  flex: 1;
   gap: 16px;
   height: 100%;
 }
@@ -106,5 +105,22 @@
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.medal-icon {
+  font-size: 25px;
+}
+
+.achivement {
   color: #ffffff;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .medal-icon {
+    font-size: 25px;
+  }
+  .achivement {
+    font-size: 13px;
+  }
 }

@@ -6,7 +6,7 @@ const experienceList = [
     jobTitle: "Flutter Developer",
     companyName: "BytesWay",
     jobDescription:
-      "Developed and maintained multiple mobile and web applications. Collaborated with design teams to implement pixel-perfect UI and enhance user experience. Successfully launched 8+ applications across iOS, Android, and Web platforms",
+      "Developed and maintained multiple mobile applications. Collaborated with design teams to implement pixel-perfect UI and enhance user experience. Successfully launched 2+ applications across iOS and Android",
     jobSkills: ["Flutter", "Dart", "GetX", "Rest API", "BloC"],
     achivements: ["Developed and published 2 flutter apps"],
   },
@@ -26,8 +26,8 @@ export default function TimeLineSection() {
           </div>
         </div>
         <div className="experiences">
-          {experienceList.map((experience) => (
-            <TimeLineExperience experience={experience} />
+          {experienceList.map((experience,index) => (
+            <TimeLineExperience key={index} experience={experience} />
           ))}
         </div>
       </div>

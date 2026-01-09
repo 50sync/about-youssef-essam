@@ -32,14 +32,6 @@
   color: #91a2ba;
 }
 
-.project-technology {
-  color: #91a2ba;
-  background-color: #1d293d;
-  width: fit-content;
-  border-radius: 100px;
-  padding: 8px;
-}
-
 .project-technologies {
   display: flex;
   flex-wrap: wrap;

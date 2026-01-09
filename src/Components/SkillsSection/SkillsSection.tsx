@@ -53,8 +53,8 @@ export default function SkillsSection() {
           </h2>
         </div>
         <div className="skills-row-skills">
-          {skillsList.map((skill) => (
-            <SkillContainer skill={skill} />
+          {skillsList.map((skill,index) => (
+            <SkillContainer key={index} skill={skill} />
           ))}
         </div>
       </div>

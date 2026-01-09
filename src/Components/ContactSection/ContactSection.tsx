@@ -34,8 +34,8 @@ export default function ContactSection() {
           </div>
         </div>
         <div className="contact-informations">
-          {contactInfoList.map((contactInfo) => {
-            return <ContactInfo contactInfo={contactInfo} />;
+          {contactInfoList.map((contactInfo, index) => {
+            return <ContactInfo key={index} contactInfo={contactInfo} />;
           })}
         </div>
       </div>

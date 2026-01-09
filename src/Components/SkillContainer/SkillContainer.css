@@ -10,14 +10,6 @@
   backdrop-filter: blur(40px);
 }
 
-.skill-item {
-  background-color: #1d293d;
-  padding-inline: 16px;
-  padding-block: 4px;
-  border-radius: 100px;
-  color: white;
-}
-
 .skills-row {
   display: flex;
   flex-wrap: wrap;

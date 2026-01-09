@@ -1,20 +1,19 @@
 .home-section {
   align-items: center;
   flex-direction: column;
-  color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  gap: 20px;
-  position: relative;
 }
 
-h1 {
-  margin: 0;
-}
-h2 {
-  margin: 0;
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  gap: 20px;
 }
 
 .home-icon {
@@ -23,16 +22,15 @@ h2 {
   object-fit: cover;
 }
 
-.description {
+.home-description {
   text-align: center;
   max-width: 800px;
   font-weight: 300;
-  padding-inline: 8px;
-  font-size: 12px;
-  color: var(--home-description-color);
+  font-size: var(--description-font-size);
+  color: var(--description-color);
 }
 
-.buttons-row {
+.home-buttons-row {
   display: inline-flex;
   gap: 20px;
 }
@@ -44,14 +42,13 @@ h2 {
   outline: none;
   border: none;
   cursor: pointer;
-  color: white;
+  color: var(--title-color);
 }
 
 .get-in-touch-button {
-  background: linear-gradient(to right, #0d6efd, #6f42c1);
+  background: var(--get-in-touch-button-gradient);
   background-size: 200%;
-
-  transition: all 0.2s ease-in-out;
+  transition: var(--default-transition);
 }
 
 .get-in-touch-button:hover {
@@ -65,37 +62,45 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: grey 1px solid;
+  border: var(--border-color) 1px solid;
   transition: all 0.2s ease-in-out;
 }
 
 .view-projects-button:hover {
   background-color: transparent;
-  border: grey 1px solid;
   transform: translateY(-5px);
 }
 
-.links {
+.home-links {
   display: inline-flex;
   gap: 30px;
   translate: 0 20px;
 }
 
-.links a {
-  color: grey;
+.home-links a {
+  color: var(--home-links-color);
   font-size: 30px;
   transition: all 0.2s ease-in-out;
 }
 
-.links a:hover {
+.home-links a:hover {
   color: white;
   transform: scale(1.2) rotate(10deg);
 }
 
-.welcome-name {
+.home-welcome-name {
   background: linear-gradient(135deg, #0d6efd, #6f42c1 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.home-welcome-text {
+  color: var(--title-color);
+}
+
+.home-title {
+  color: var(--title-color);
+  font-size: var(--title-font-size);
 }
 
 .arrow-down {
@@ -143,13 +148,16 @@ h2 {
   align-items: center;
   height: 140px;
   width: 140px;
+  margin-bottom: 20px;
 }
 
 .glow-wrapper {
   position: absolute;
-  inset: 0;
-  animation: glowRotating 100s linear infinite;
   pointer-events: none;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  animation: glowRotating 100s linear infinite;
 }
 
 @media screen and (max-width: 510px) {

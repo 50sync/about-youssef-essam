@@ -3,5 +3,16 @@
   --nav-hover-color: #03a9f4;
   --nav-disabled-color: #f2f2f3;
   --nav-active-color: white;
-  --home-description-color: #91a2ba;
+  --default-transition: all 0.2s ease-in-out;
+  --home-links-color: grey;
+  --description-color: #91a2ba;
+  --get-in-touch-button-gradient: linear-gradient(to right, #0d6efd, #6f42c1);
+  --icons-color: #50a2ff;
+  --lite-border-color: #90958932;
+  --border-color: grey;
+  --title-color: white;
+  --title-font-size: clamp(16px, 2vw, 20px);
+  --description-font-size: clamp(12px, 2vw, 16px);
+  --tag-font-color: #cbcee1;
+  --tag-font-size: 14px;
 }

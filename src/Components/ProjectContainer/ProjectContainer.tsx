@@ -1,3 +1,4 @@
+import Tag from "../Tag/Tag";
 import "./ProjectContainer.css";
 
 type projectModel = {
@@ -24,8 +25,8 @@ export default function Project({ project }: projectProps) {
           <div className="project-title">{project.title}</div>
           <div className="project-description">{project.description}</div>
           <div className="project-technologies">
-            {project.technologies.map((technology) => (
-              <div className="project-technology">{technology}</div>
+            {project.technologies.map((technology, index) => (
+              <Tag key={index} label={technology} />
             ))}
           </div>
         </div>
