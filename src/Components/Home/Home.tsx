@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <div className="home-section" id="home-section">
-       
         <div className="home-content">
           <div className="home-icon-wrapper">
             <div className="home-icon-pulse" />
@@ -29,9 +28,12 @@ export default function Home() {
             </h2>
           </div>
           <div className="home-buttons-row">
-            <button className="home-button get-in-touch-button">
+            <a
+              href="#contact-section"
+              className="home-button get-in-touch-button"
+            >
               Get in touch
-            </button>
+            </a>
             <a
               className="home-button view-projects-button"
               href="#projects-section"

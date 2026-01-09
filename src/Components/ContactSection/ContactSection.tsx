@@ -33,7 +33,7 @@ export default function ContactSection() {
             build something amazing together.
           </div>
         </div>
-        <div className="contact-informations">
+        <div className="contact-informations" id="contact-section">
           {contactInfoList.map((contactInfo, index) => {
             return <ContactInfo key={index} contactInfo={contactInfo} />;
           })}

@@ -46,6 +46,10 @@
 }
 
 .get-in-touch-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--get-in-touch-button-gradient);
   background-size: 200%;
   transition: var(--default-transition);
