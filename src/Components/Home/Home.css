@@ -25,7 +25,7 @@
 
 .home-description {
   text-align: center;
-  max-width: 80%;
+  max-width: 50%;
   font-weight: 300;
   font-size: var(--description-font-size);
   color: var(--description-color);
@@ -144,7 +144,7 @@
   border-radius: 100%;
   height: 140px;
   width: 140px;
-  box-shadow: 0 0 10px 10px rgba(128, 0, 128, 0.5);
+  animation: pulsing 3s ease-in-out infinite alternate;
 }
 
 .home-icon-wrapper {
@@ -159,25 +159,24 @@
 .glow-wrapper {
   position: absolute;
   pointer-events: none;
-  left: 0;
-  right: 0;
+  inset: 0;
   height: 100vh;
   animation: glowRotating 100s linear infinite;
 }
 
-@media screen and (max-width: 510px) {
-  .description {
-    font-size: 10px;
+@media (max-width: 1000px) {
+  .home-description {
+    max-width: 80%;
   }
 }
 
 @keyframes pulsing {
   from {
-    transform: scale(1);
+    box-shadow: 0 0 20px 20px rgba(128, 0, 128, 0.5);
   }
 
   to {
-    transform: scale(1.3);
+    box-shadow: 0 0 0px 0px rgba(128, 0, 128, 0.5);
   }
 }
 

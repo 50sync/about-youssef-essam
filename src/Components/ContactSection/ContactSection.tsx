@@ -13,7 +13,7 @@ const contactInfoList = [
   {
     icon: <BiPhone />,
     title: "Phone",
-    description: "+20(01099870599)",
+    description: "+201099870599",
   },
   {
     icon: <CiLocationOn />,
