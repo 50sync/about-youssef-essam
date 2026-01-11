@@ -7,7 +7,7 @@ body {
   padding: 0;
   background: linear-gradient(to right, #020719, #10192e);
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  height: 100dvh;
 }
 
 .section-title {
