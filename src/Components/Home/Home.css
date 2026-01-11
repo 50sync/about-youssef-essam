@@ -141,7 +141,7 @@
 
 .home-icon-pulse {
   position: absolute;
-  border-radius: 100%;
+  border-radius: 140px;
   height: 140px;
   width: 140px;
   animation: pulsing 3s ease-in-out infinite alternate;
@@ -176,7 +176,7 @@
   }
 
   to {
-    box-shadow: 0 0 0px 0px rgba(128, 0, 128, 0.5);
+    box-shadow: none;
   }
 }
 
