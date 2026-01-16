@@ -2,6 +2,7 @@ import { FaFlutter, FaReact } from "react-icons/fa6";
 import "./SkillsSection.css";
 import SkillContainer from "../SkillContainer/SkillContainer.tsx";
 import { BiMobile } from "react-icons/bi";
+import { LuGitMerge } from "react-icons/lu";
 
 const skillsList = [
   {
@@ -38,7 +39,19 @@ const skillsList = [
     description: "Modern web applications with React ecosystem",
     skills: ["React.js", "Hooks", "Tailwind CSS", "Zustand", "Redux"],
   },
-  
+  {
+    icon: <LuGitMerge />,
+    name: "Version Control",
+    description: "Version Control And Deployment Tools",
+    skills: [
+      "Git",
+      "GitHub Actions",
+      "CI/CD",
+      "Docker",
+      "App Store",
+      "Play Store",
+    ],
+  },
 ];
 
 export default function SkillsSection() {
@@ -52,10 +65,12 @@ export default function SkillsSection() {
             applications
           </h2>
         </div>
-        <div className="skills-row-skills">
-          {skillsList.map((skill,index) => (
-            <SkillContainer key={index} skill={skill} />
-          ))}
+        <div className="skills-row-wrapper">
+          <div className="skills-row-skills">
+            {skillsList.map((skill, index) => (
+              <SkillContainer key={index} skill={skill} />
+            ))}
+          </div>
         </div>
       </div>
     </>
