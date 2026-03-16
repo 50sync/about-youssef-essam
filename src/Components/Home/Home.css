@@ -172,7 +172,7 @@
 
 @keyframes pulsing {
   from {
-    box-shadow: 0 0 20px 20px rgba(128, 0, 128, 0.5);
+    box-shadow: 0 0 20px 20px rgba(7, 163, 210, 0.299);
   }
 
   to {
